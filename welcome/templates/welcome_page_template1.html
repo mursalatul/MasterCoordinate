@@ -1,19 +1,63 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title>Co Ordinates</title>
 </head>
+
 <body>
-    <h1>Hi there,</h1>
-    <h2>Lets learn some coordinates</h2>
-    <h2>Give the value of 2 coordinates</h2>
-    <form action="p1">
-        <input type="number" name="x1">
-        <input type="number" name="y1">
-        <button>Submit</button>
-    </form>
+
+    <header>
+        <h3>Let's calculate</h3>
+
+        <h3>Co-ordinate's</h3>
+    </header>
+    <main>
+        <section id="zero">
+            <div class="main-container">
+
+                <form action="p1">
+
+                    <div class="forms">
+                        <h3>Give the co-ordinates of x1</h3>
+                        <input type="number" placeholder="Give integer " name="x1" id="">
+                    </div>
+                    <div class="forms">
+                        <h3>Give the co-ordinates of x2</h3>
+                        <input type="number" placeholder="Give integer " name="y1" id="">
+                    </div>
+                    <div class="forms">
+                        <h3>Give the co-ordinates of y1</h3>
+                        <input type="number" placeholder="Give integer " name="x2" id="">
+                    </div>
+                    <div class="forms">
+                        <h3>Give the co-ordinates of y2</h3>
+                        <input type="number" placeholder="Give integer " name="y2" id="">
+                    </div>
+
+            </div>
+
+            <div>
+                <div id="btn-field">
+                    <input type="submit" value="Submit" name="" id="btn-submit">
+                </div>
+
+            </div>
+
+            </form>
+        </section>
+
+
+    </main>
+
+
+
+
 </body>
+
 </html>

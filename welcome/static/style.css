@@ -1,0 +1,49 @@
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-left: 240px;
+    color: brown;
+    border-radius: 10px;
+    gap: 315px;
+}
+
+.main-container {
+    color: salmon;
+    background-color: beige;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 870px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 240px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+#btn-submit {
+    width: 870px;
+    height: 30px;
+    margin-bottom: 100px;
+    color: black;
+    background-color: rgb(255, 127, 104);
+    border-radius: 5px;
+}
+
+#btn-field {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
