@@ -11,12 +11,14 @@ def welcome_page(request):
 def show_options(request):
     x1 = request.GET['x1']
     y1 = request.GET['y1']
+    x2 = request.GET['x2']
+    y2 = request.GET['y2']
 
     # if data attached
-    if x1 and y1:
+    if x1 and y1 and x2 and y2:
         show_page = loader.get_template("show_coordinates_template1.html")
         context = {
-            "p" : [x1, y1],
+            "p" : [x1, y1, x2, y2],
         }
         return HttpResponse(show_page.render(context, request))
     else:
